@@ -26,7 +26,7 @@ function GenerateImage (){
         const { Configuration, OpenAIApi } = require("openai");
 
         const configuration = new Configuration({
-            apiKey: "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",
+            apiKey: process.env.REACT_APP_OPENAI_API,
         });
 
         const openai = new OpenAIApi(configuration);
