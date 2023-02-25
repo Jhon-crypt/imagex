@@ -64,7 +64,7 @@ function GenerateImage (){
         <>
             {loading ? 
                 (
-                    <div className="mx-auto" style={{ "width" : "150px" }}>
+                    <div className="mx-auto" style={{ "width" : "300px" }}>
                     <Bars 
                         height="80"
                         width="80"
@@ -96,7 +96,7 @@ function GenerateImage (){
 
                                             <img src={imageUrl} className="rounded mb-2" alt="generated" 
                                             style={{"objectFit":"cover","border":"1px solid black","height":"300px","borderRadius":"20px",
-                                            "width":"400px"}}/>
+                                            }}/>
 
                                         </>  
                                         : 
