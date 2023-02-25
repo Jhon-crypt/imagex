@@ -90,8 +90,18 @@ function GenerateImage (){
                                             <b>Generate</b>
                                         </button>
                                     </div>
-                                    <p>{imageStatus ? <><p>Chill for some seconds while the image loads</p> <img src={imageUrl} className="rounded" alt="generated" 
-                                    style={{"objectFit":"cover","border":"1px solid black","height":"300px","borderRadius":"20px","width":"500px"}}/></> : <p>{errorStatus}</p>}</p>
+                                    <div>{imageStatus ? 
+                                        <>
+                                            <p>Chill for some seconds while the image loads</p> 
+
+                                            <img src={imageUrl} className="rounded mb-2" alt="generated" 
+                                            style={{"objectFit":"cover","border":"1px solid black","height":"300px","borderRadius":"20px",
+                                            "width":"400px"}}/>
+
+                                        </>  
+                                        : 
+                                        <p>{errorStatus}</p>}
+                                    </div>
                                 </form>
                             </p>
                         </div>
