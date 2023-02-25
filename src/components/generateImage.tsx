@@ -64,7 +64,7 @@ function GenerateImage (){
         <>
             {loading ? 
                 (
-                    <div className="mx-auto" style={{ "width" : "100px" }}>
+                    <div className="mx-auto" style={{ "width" : "80px" }}>
                     <Bars 
                         height="80"
                         width="80"
